@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Arriaga | Portfolio</title>
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="Css/styles2.css">
+    <link rel="icon" type="image/x-icon" href="Images/shield.png">
+</head>
+<body>
+    <!-- Header content -->
+    <header>
+        <nav>
+            <h1>John Arriaga</h1>
+            <br>
+            <ul>
+                <div class="Button-container">
+                    <a href="#contact" class="Header-btn">Contact</a>
+                    <a href="#About" class="Header-btn">About</a>
+                    <a href="#skills" class="Header-btn">Skills</a>
+                    <a href="#Projects" class="Header-btn">Projects</a>
+                    <a href="mainpage.html" class="Header-btn">home</a>
+                  </div>
+            </ul>
+        </nav>
+    </header>
+    <!-- H2 content -->
+    <section class="fade-in">
+    <section id="hero">
+        <h2 class="tech-header">Hi, I'm John Arriaga</h2>
+
+        <p>Freelance Web Developer | Security Analyst in Training | Web Designer</p>
+        <div class="button-container">
+            <a href="mailto:john.arriagab@gmail.com" class="explore-btn">hire me</a>
+        </div>
+    </section>
+    </section>
+    <!--Shape background -->
+    <div class="shape-container">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+
+      <!-- About me Content -->
+
+    <section class="fade-in">
+      <section id="About">
+        <h2>About Me</h2>
+        <p>Hey, I’m John Arriaga 👋
+            <br><br>
+            I’m a web developer with a passion for building secure, user-friendly applications. My journey started with web development, but I’ve always been drawn to cybersecurity—understanding how things work under the hood and how to make them stronger.
+            <br><br>
+            Beyond coding, I love cooking and experimenting with flavors, especially customizing Cuban dishes. Just like in development, I enjoy breaking things down, improving them, and adding my own twist.
+            <br><br>
+            I’m currently honing my skills in HTML, CSS, JavaScript, Firebase, and Node.js, building real-world projects to bridge the gap between development and security. Whether it’s crafting seamless web experiences or strengthening applications against vulnerabilities, I’m always up for a challenge.
+            <br><br>
+            Let’s connect and build something great together
+           
+        </p>
+    </section>
+    </section>
+<!-- Project Content-->
+    <section class="fade-in">
+    <section>
+        <h2>My Projects</h2>
+        <section id="Projects">
+        <div class="projects">
+            <div class="project">
+                <h3>My Blog Website</h3>
+                <p><strong>Date:</strong> In Progress</p>
+                <p>this website will showcase my Web development skills and also my dishes,displaying ingredients and step-by-step instructions and featuring my future Custom T-Shirt Business</p>
+            </div>
+            <div class="project">
+                <h3>Freelance Web development and Security Features page</h3>
+                <p><strong>Date:</strong>In Progress</p>
+                <p>This will be my website for creating custom web pages and adding security Features. Contact me for more below.</p>
+            </div>
+            <div class="project">
+                <h3>Fitness Tracker</h3>
+                <p><strong>Date:</strong> Coming soon</p>
+                <p>a fitness app where users can log their workouts, track progress, and set goals.</p>
+            </div>
+            <div class="project">
+                <h3>Vulnerability Scanning Tool</h3>
+                <p><strong>Date:</strong> Coming soon</p>
+                <p>scans websites for common vulnerabilities such as SQL injection, XSS (Cross-Site Scripting), or outdated software versions.</p>
+            </div>
+        </div>
+    </section>
+    </section>
+    </section>
+    
+    <!-- Skills content -->
+    
+    <section id="skills">
+    <section class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-skill="90%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-skill="85%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-skill="20%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-skill="95%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Cybersecurity</h3>
+                <div class="skill-bar">
+                    <div class="skill-fill" data-skill="30%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<!-- Script for bar animation for skill section content -->
+    <script>document.addEventListener("DOMContentLoaded", function () {
+        const skillSection = document.querySelector(".skills");
+        const skillBars = document.querySelectorAll(".skill-fill");
+    
+        function showSkills() {
+            const sectionPos = skillSection.getBoundingClientRect().top;
+            const screenPos = window.innerHeight / 1.2;
+    
+            if (sectionPos < screenPos) {
+                skillSection.classList.add("show");
+                skillBars.forEach((bar) => {
+                    bar.style.width = bar.getAttribute("data-skill");
+                });
+            }
+        }
+    
+        window.addEventListener("scroll", showSkills);
+    });
+    </script>
+    
+   <!-- Contact section content -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="social-icons">
+            <!-- GitHub Icon -->
+            <a href="https://github.com/JohnAWebdev" target="_blank" class="social-icon">
+                <img src="Images/github.png" alt="GitHub">
+            </a>
+            <!-- LinkedIn Icon -->
+            <a href="https://www.linkedin.com/in/john-arriaga-205048355/" target="_blank" class="social-icon">
+                <img src="Images/Linkedin.jpeg" alt="LinkedIn">
+            </a>
+            <!-- Email Icon -->
+            <a href="mailto:john.arriagab@gmail.com" class="social-icon">
+                <img src="Images/email.png" alt="Email">
+            </a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 John Arriaga. All Rights Reserved.</p>
+    </footer>
+
+    <script src="Js/script1.js"></script>
+</body>
+</html>
