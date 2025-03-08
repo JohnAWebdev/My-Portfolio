@@ -187,7 +187,14 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
   }
-  
+
+  .project1 {
+    padding: 15px;
+    border-left: 5px solid #41338d;
+    background: #22212177;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
   .project h3 {
     margin: 0 0 5px;
   }
