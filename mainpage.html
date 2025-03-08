@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Arriaga | Portfolio</title>
+    <link rel="stylesheet" href="Css/styles1.css">
+    <link rel="icon" type="image/x-icon" href="shield.png">
+    <style>
+        /* style for homepage and meet the future */
+        body {
+            background-color: #0d0d0d; /* Dark background */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        .content {
+            flex-grow: 1; /* Pushes the button to the bottom */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .button-container {
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+        }
+
+        .explore-btn {
+            font-size: 20px;
+            font-weight: bold;
+            color: #00ff7f; /* Neon green text */
+            background: #111; /* Dark button background */
+            border: 2px solid #00ff7f; /* Neon green border */
+            padding: 12px 24px;
+            text-transform: uppercase;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+            box-shadow: 0 0 10px #00ff7f;
+            display: inline-block;
+        }
+
+        .explore-btn:hover {
+            background: #00ff7f; /* Invert colors on hover */
+            color: #111;
+            box-shadow: 0 0 20px #00ff7f;
+        }
+           /* H2 Tech Header */
+           .tech-header {
+            margin-bottom: 120px; /* Move it up */
+            font-size: 36px;
+            font-weight: bold;
+            color: #00ff7f; /* Neon green text */
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #00ff7f; /* Neon border */
+            overflow: hidden;
+            box-shadow: 0 0 10px #00ff7f;
+        }
+
+        /* Light effect moving from right to left */
+        .tech-header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to left, rgba(0, 255, 127, 0.3), rgba(0, 255, 127, 0));
+            animation: light-sweep 2s infinite linear;
+        }
+
+        @keyframes light-sweep {
+            0% { left: 100%; }
+            100% { left: -100%; }
+        }
+
+        /* Explore Button */
+        .explore-btn {
+            font-size: 20px;
+            font-weight: bold;
+            color: #00ff7f;
+            background: #111;
+            border: 2px solid #00ff7f;
+            padding: 12px 24px;
+            text-transform: uppercase;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+            box-shadow: 0 0 10px #00ff7f;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .explore-btn:hover {
+            background: #00ff7f;
+            color: #111;
+            box-shadow: 0 0 20px #00ff7f;
+        }
+    </style>
+</head>
+<body>
+    <!-- homepage content -->
+
+    <section id="hero">
+        <div class="background-text">
+            Meet the Future
+        </div>
+        
+        <h2 class="tech-header">Hi, I'm John Arriaga</h2>
+        
+        <p style="color: #00ff7f;">Freelance Web Developer | Security Analyst in Training | Web designer</p>
+    </section>
+    
+    
+    <div class="button-container">
+        <a href="index.html" class="explore-btn">Explore More</a>
+    </div>
+
+    
+
+    <script src="Js/script.js"></script>
+</body>
+</html>
