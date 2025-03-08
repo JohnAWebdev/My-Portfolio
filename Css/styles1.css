@@ -1,0 +1,71 @@
+/* Global Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #111; /* Set background to dark color to simulate terminal */
+    color: white;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #111;
+    overflow: hidden;
+}
+
+/* Background Text that animates */
+.background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #00ff7f; /* Terminal-like green color */
+    white-space: nowrap;
+    letter-spacing: 3px;
+    opacity: 1; /* Initial opacity 0 */
+    animation: scroll-text 5s linear infinite; /* Animation for scrolling text */
+}
+
+/* Hero Text */
+#hero h2, #hero p {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+/* Content Section */
+#content {
+    padding: 50px;
+    background-color: #222;
+    text-align: center;
+}
+
+#content h2 {
+    color: white;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation for "Meet the Future" text */
+@keyframes scroll-text {
+    0% {
+        transform: translate(-50%, -50%) translateX(100%);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateX(-100%);
+    }
+}

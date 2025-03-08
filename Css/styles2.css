@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #00ff7f; /* Header title text color */
+    margin-bottom: 0px; /* Space between title and buttons */
+  }
+  
+  header {
+    background-color: #22212177; /* Header background color */
+    padding: 20px; /* Padding inside the header */
+    text-align: center; /* Center the content horizontally */
+    position: relative; /* Allows positioning of buttons below h1 */
+  }
+  
+  .Button-container {
+    display: flex; /* Align buttons in a row */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 20px; /* Space between buttons */
+    flex-direction: row-reverse; /* Arrange buttons from right to left */
+    margin-top: 10px; /* Space between title and buttons */
+  }
+  
+  /* Header buttons in index.html */
+  .Header-btn {
+    font-size: 14px;
+    font-weight: bold;
+    color: #00ff7f;
+    background: #111;
+    border: 2px solid #00ff7f;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px #00ff7f;
+    display: inline-block;
+  }
+  .Header-btn:hover {
+    background: #00ff7f;
+    color: #111;
+    box-shadow: 0 0 20px #00ff7f;
+  }
+
+  /* Explore Button */
+  .explore-btn {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00ff7f;
+    background: #111;
+    border: 2px solid #00ff7f;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px #00ff7f;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .explore-btn:hover {
+    background: #00ff7f;
+    color: #111;
+    box-shadow: 0 0 20px #00ff7f;
+  }
+  
+  
+  
