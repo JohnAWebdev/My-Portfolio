@@ -10,7 +10,7 @@
     font-family: Arial, sans-serif;
     overflow :auto;
     background-color: black;
-    color: #00ff7f;
+    color: #FFFF33;
   }
   
   /* Customize the vertical scrollbar */
@@ -26,14 +26,14 @@
   
   /* Customize the scrollbar thumb (the part you drag) */
   ::-webkit-scrollbar-thumb {
-    background: #00ff7f; /* Neon green thumb */
+    background: #FFFF33; /* Neon green thumb */
     border-radius: 10px; /* Optional: rounded corners */
     border: 2px solid #333333; /* Optional: add border around the thumb */
   }
   
   /* Change thumb color when hovered */
   ::-webkit-scrollbar-thumb:hover {
-    background: #00b34d; /* Darker neon green on hover */
+    background: #FFFF33; /* Darker neon green on hover */
   }
 
   /* Links */
@@ -44,7 +44,7 @@
   /* Header Styles */
   header {
     background: #22212177;
-    color: #00ff7f;
+    color: #FFFF33;
     padding: 1rem;
     text-align: center;
   }
@@ -66,7 +66,7 @@
   }
   
   nav ul li a {
-    color: #00ff7f;
+    color: #FFFF33;
     text-decoration: none;
   }
   
@@ -182,7 +182,7 @@
   /* Individual Project */
   .project {
     padding: 15px;
-    border-left: 5px solid color #00ff7f;
+    border-left: 5px solid color #FFFF33;
     background: #22212177;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -246,7 +246,7 @@
   
   .skill-fill {
     height: 100%;
-    background: #00ff7f;
+    background: #FFFF33;
     border-radius: 5px;
     width: 0; /* Start at 0% width */
     transition: width 1.5s ease-in-out;
@@ -257,14 +257,14 @@
     margin-bottom: 10px; /* Move it up */
     font-size: 40px;
     font-weight: bold;
-    color: #00ff7f; /* Neon green text */
+    color: #FFFF33; /* Neon green text */
     position: relative;
     display: inline-block;
     padding: 3px;
-    border: 5px solid #00ff7f; /* Neon border */
+    border: 5px solid #FFFF33; /* Neon border */
     overflow: hidden;
     border-radius: 15px;
-    box-shadow: 0 0 10px #00ff7f;
+    box-shadow: 0 0 10px #FFFF33;
   }
   
   /* Light effect moving from right to left */
