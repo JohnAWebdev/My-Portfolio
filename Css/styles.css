@@ -271,6 +271,7 @@
   .tech-header::before {
     content: "";
     position: absolute;
+    color: #FFFF33;
     top: 0;
     left: 100%;
     width: 100%;
