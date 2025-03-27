@@ -29,7 +29,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
-    color: #00ff7f; /* Terminal-like green color */
+    color: #FFFF33; /* Terminal-like green color */
     white-space: nowrap;
     letter-spacing: 3px;
     opacity: 1; /* Initial opacity 0 */
